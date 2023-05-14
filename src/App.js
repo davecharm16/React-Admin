@@ -3,6 +3,8 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from './scenes//global/Topbar';
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from './scenes/dashboard';
+import Team from './scenes/team';
+import Contacts from "./scenes/contacts";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -23,9 +25,9 @@ function App() {
             <Topbar/>
             <Routes>
                 <Route path="/" element={<Dashboard />} />
-              {/* <Route path='/team' element={<Team/>} /> */}
+                <Route path='/team' element={<Team/>} />
+                <Route path='/Contacts' element={<Contacts/>} />  
               {/* <Route path='/Invoices' element={<Invoices/>} /> */}
-              {/* <Route path='/Contacts' element={<Contacts/>} /> */}
               {/* <Route path='/Bar' element={<Bar/>} /> */}
               {/* <Route path='/Form' element={<Form/>} /> */}
               {/* <Route path='/Line' element={<Line/>} /> */}
